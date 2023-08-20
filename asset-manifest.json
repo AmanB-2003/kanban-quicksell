@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kanban-quicksell/static/css/main.1f0f03ec.css",
+    "main.js": "/kanban-quicksell/static/js/main.86131331.js",
+    "static/js/787.d1328edb.chunk.js": "/kanban-quicksell/static/js/787.d1328edb.chunk.js",
+    "index.html": "/kanban-quicksell/index.html",
+    "main.1f0f03ec.css.map": "/kanban-quicksell/static/css/main.1f0f03ec.css.map",
+    "main.86131331.js.map": "/kanban-quicksell/static/js/main.86131331.js.map",
+    "787.d1328edb.chunk.js.map": "/kanban-quicksell/static/js/787.d1328edb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1f0f03ec.css",
+    "static/js/main.86131331.js"
+  ]
+}
