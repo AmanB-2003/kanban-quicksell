@@ -25,7 +25,7 @@ const Board = (props) =>{
             const entry = data.filter((d)=>{
                 return (d.priority === i)
             })
-            items.push(<Column title={values.priority.states[i]} data={entry} users={users} group={props.group} order={props.order} key={i}/>);
+            items.push(<Column title={values.priority.states[i]} data={entry} users={users} group={props.group} order={props.order} index={i} key={i}/>);
         }
     }
 
@@ -34,7 +34,7 @@ const Board = (props) =>{
             const entry = data.filter((d)=>{
                 return (d.status === values.status.states[i])
             })
-            items.push(<Column title={values.status.states[i]} data={entry} users={users} group={props.group} order={props.order} key={i}/>);
+            items.push(<Column title={values.status.states[i]} data={entry} users={users} group={props.group} order={props.order} index={i} key={i}/>);
         }
     }
 
@@ -43,7 +43,7 @@ const Board = (props) =>{
             const entry = data.filter((d)=>{
                 return (d.userId === users[i].id)
             })
-            items.push(<Column title={users[i].name} data={entry} users={users} group={props.group} order={props.order} key={i}/>);
+            items.push(<Column title={users[i].name} data={entry} users={users} group={props.group} order={props.order} index={i} key={i}/>);
         }
     }
 

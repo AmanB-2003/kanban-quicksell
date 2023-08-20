@@ -29,12 +29,18 @@ const Column =(props)=>{
             return 0;
         });
     }
+    
+    let iconSource = "";
+    if(props.group === "status"){
+        iconSource = vals.status.icons[props.index];
+    }else if(props.group === "priority"){
+        iconSource = vals.priority.icons[props.index];
+    }else iconSource = "https://img.icons8.com/emoji/48/woman-curly-hair.png";
 
     return(
         <div className="column">
             <div className="heading">
-                {/* {props.group !== "users" && <img src=></img>} */}
-                {props.group === "users" && <img height={20} width={20} src={"https://img.icons8.com/emoji/48/woman-curly-hair.png"}></img>}
+                <img height={20} width={20} src={iconSource} alt="column-icon" />
                 <p>{props.title}</p>
                 <span style={{fontSize: "large", margin: "auto", marginRight:"5px"}}>+</span>
             </div>
