@@ -1,0 +1,28 @@
+.card{
+    border: 1px #cbc5c5 solid;
+    border-radius: 6px;
+    padding: 0.5rem;
+    text-align: start;
+    margin-bottom: 7px;
+}
+
+.card p{
+    margin: 2px;
+}
+
+.row-start{
+    display: flex;
+    justify-content: space-between;
+}
+.row-mid, .row-end{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.breadcrumb{
+    color: gray;
+    border: 1px #cbc5c5 solid;
+    border-radius: 5px;
+    padding: 3px;
+    margin-left: 5px;
+}

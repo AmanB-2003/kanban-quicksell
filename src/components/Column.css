@@ -1,0 +1,10 @@
+.column{
+    width: 14.3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.column .heading{
+    display: flex;
+    flex-direction: row;
+}

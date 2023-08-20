@@ -1,6 +1,30 @@
 .App {
   text-align: center;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  /* background: lightgray; */
 }
+
+.App select, .App label{
+  font-family: 'Bricolage Grotesque', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.select select, .select label{
+  margin-left: 0.5rem;
+}
+
+p, span, select, label{
+  font-size: small;
+}
+
+.App .select{
+  display: flex;
+  align-items: flex-start;
+}
+
+
+
 
 .App-logo {
   height: 40vmin;
