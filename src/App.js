@@ -3,14 +3,25 @@ import './App.css';
 import Board from './components/Board';
 
 function App() {
-  const [groupby, setGroupby] = useState("status");
-  const [orderby, setOrderby] = useState("priority");
+
+  //local storage to save state even after reloading
+  if(!localStorage.getItem('groupby')){
+    localStorage.setItem('groupby', "status");
+  }
+  if(!localStorage.getItem('orderby')){
+    localStorage.setItem('orderpby', "priority");
+  }
+
+  const [groupby, setGroupby] = useState(localStorage.getItem('groupby'));
+  const [orderby, setOrderby] = useState(localStorage.getItem('orderby'));
 
   function handleChange(event){
     if(event.target.id === "group"){
       setGroupby(event.target.value);
+      localStorage.setItem('groupby', event.target.value);
     }else{
       setOrderby(event.target.value);
+      localStorage.setItem('orderby', event.target.value);
     }
   }
 

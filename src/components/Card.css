@@ -4,6 +4,7 @@
     padding: 0.5rem;
     text-align: start;
     margin-bottom: 7px;
+    background-color: white;
 }
 
 .card p{
@@ -13,13 +14,22 @@
 .row-start{
     display: flex;
     justify-content: space-between;
+    color: gray;
+    font-weight: 300;
 }
 .row-mid, .row-end{
     display: flex;
     justify-content: flex-start;
 }
 
+#user-img span{
+    font-size: 9px;
+    position: relative;
+    margin-left: -4px;
+}
+
 .breadcrumb{
+    font-weight: 300;
     color: gray;
     border: 1px #cbc5c5 solid;
     border-radius: 5px;

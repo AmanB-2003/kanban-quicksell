@@ -1,12 +1,15 @@
 import './Card.css';
 import vals from "../displayStates.json"
 
-const Card = ({id, title, priority, tag}) =>{
+const Card = ({id, title, priority,group, tag, user}) =>{
     return(
         <div className="card">
             <div className="row-start">
                 <p>{id}</p>
-                <span>img</span>
+                {group !== "users" && <div id='user-img'>
+                    <img width={20} src={"https://img.icons8.com/emoji/48/woman-curly-hair.png"}></img>
+                    <span style={{color : user.available === true? "green" : "gray"}}>&#11044;</span>
+                </div>}
             </div>
             <div className="row-mid">
                 <p>{title}</p>

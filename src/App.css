@@ -1,11 +1,12 @@
 .App {
   text-align: center;
-  font-family: 'Bricolage Grotesque', sans-serif;
-  /* background: lightgray; */
+  font-family: 'Outfit', sans-serif;
+  /* font-family: 'Bricolage Grotesque', sans-serif; */
 }
 
 .App select, .App label{
-  font-family: 'Bricolage Grotesque', sans-serif;
+  /* font-family: 'Bricolage Grotesque', sans-serif; */
+  font-family: 'Outfit', sans-serif;
   margin-top: 5px;
   margin-bottom: 5px;
 }
@@ -14,13 +15,20 @@
   margin-left: 0.5rem;
 }
 
-p, span, select, label{
+p, span{
   font-size: small;
+  font-weight: 400;
+}
+select, label{
+  font-size: small;
+  border-radius: 4px;
+  font-weight: 300;
 }
 
 .App .select{
   display: flex;
   align-items: flex-start;
+  background-color: white;
 }
 
 
